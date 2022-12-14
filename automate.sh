@@ -9,8 +9,8 @@ if [ "$branch" = "production" ]; then
     #count=$(git tag -l |wc -l)
     #tag_arr=$(git tag -l)
     echo "production branch"
-    #docker build -t nest-sample-app:$tag
-    docker build -t nest-sample-app:$tag_arr
+    #docker build -t nest-sample-app:$tag   .
+    docker build -t nest-sample-app:$tag_arr  .
     break
 else
     echo "other branch"
